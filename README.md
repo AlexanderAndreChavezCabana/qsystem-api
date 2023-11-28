@@ -215,8 +215,7 @@ Una vez importado el proyecto, sigue estos pasos para ejecutar las consultas:
    ### Captura de Pantalla - Importación en SOAP UI:
    ![Importación en SOAP UI](imagenes_doc/lista_peticiones.png)
 
-4. Haz clic en el botón de ejecución (usualmente un triángulo verde) para enviar la solicitud al servidor.
-5. Revisa las respuestas en la parte inferior de la ventana para validar los resultados.
+
 
 
 ### Configuración de Autenticación en SOAP UI
@@ -239,6 +238,8 @@ Para ejecutar consultas autenticadas contra la API, debes incluir un token de ac
 
 1. Haz clic en el botón 'Send' para ejecutar la solicitud.
 2. Observa la respuesta en el panel de respuesta para asegurarte de que se haya autenticado y ejecutado correctamente.
+3. Haz clic en el botón de ejecución (usualmente un triángulo verde) para enviar la solicitud al servidor.
+4. Revisa las respuestas en la parte inferior de la ventana para validar los resultados.
 
 #### Documentación Visual
    ### Captura de Pantalla - Importación en SOAP UI:
