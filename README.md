@@ -167,8 +167,26 @@ Esto debería abrir el Swagger UI, donde podrás ver la documentación interacti
 
 ![](imagenes_doc/swagger.png)
 
-#### Captura de Pantalla de Swagger UI
-- Swagger UI mostrando la documentación de la API:
+### Generar Token:
 
-![](imagenes_doc/swagger.png)
+1. Dirigete hasta la sección "Token" y haz clic en "Try it out!".
+![Token](imagenes_doc/token.png)
+2. Llena los parámetros requeridos, en este caso con las credenciales *{ "username": "chavez", "password": "chavez" }* y ejecuta:
+![Token Obtain](imagenes_doc/token1.png)
 
+
+   #### Captura de pantalla: Token Obtenido
+   ![Token execute](imagenes_doc/token_obtenido.png)
+
+### Realizar una Solicitud con Token:
+
+1. Utiliza el token obtenido para realizar solicitudes a recursos protegidos.
+    #### Utilizar token en Swagger
+    1. Dirigete hasta la parte superior y presiona en authorize e inserta el token mostrada en la imagen anterior (en tu caso se mostrará otro token, inserta el obtenido).
+    ![Token](imagenes_doc/insertar_token.png)
+
+
+    2. Puedes hacerlo utilizando la operación dirigiendote a la `get personas` bajo la sección "personas".
+
+   #### Captura de pantalla: Solicitud con Token
+   ![Solicitud con Token](imagenes_doc/obtener_lista_personas.png)
