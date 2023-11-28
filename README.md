@@ -1,4 +1,6 @@
-# Q - System ![](imagenes_doc/modelsqsystemsac_logo.jpeg)
+# Q - System
+![](imagenes_doc/modelsqsystemsac_logo.jpeg)
+
 ## Instalación y Configuración Inicial
 ### Clonar el Repositorio
 
