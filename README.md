@@ -124,7 +124,7 @@ SELECT * FROM api_persona;
 ```
 ![](imagenes_doc/lista_desordenada.png)
 
-``````
+```
 # Obtener la Lista Ordenada DNI, Apellido Paterno y Apellido Materno
 SELECT * FROM api_persona ORDER BY dni, appPaterno, appMaterno;
 ```
