@@ -1,0 +1,7 @@
+django
+djangorestframework
+djangorestframework-simplejwt
+drf_spectacular
+drf-extensions
+zipp
+drf-yasg
