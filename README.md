@@ -122,14 +122,14 @@ Para obtener la lista desordenada y ordenada de personas usar las siguientes con
 # Obtener la Lista Desordenada
 SELECT * FROM api_persona;
 ```
-![](imagenes_doc/lista_ordenada.png)
+![](imagenes_doc/lista_desordenada.png)
 
 ```
 # Obtener la Lista Ordenada DNI, Apellido Paterno y Apellido Materno
 SELECT * FROM api_persona ORDER BY dni, appPaterno, appMaterno;
 ```
 
-![](imagenes_doc/lista_desordenada.png)
+![](imagenes_doc/lista_ordenada.png)
 ## Ejercicio # 2 
 
 - Se requiere la construcción de un REST API, que transmita la lista del Objeto Persona.  
