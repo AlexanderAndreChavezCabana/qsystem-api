@@ -76,7 +76,7 @@ pip install -r requirements.txt
 ### Ingresar a la carpeta del proyecto, aplicar  migraciones y correr el sistema
 ```
 cd app
-# De ser necesario aplicar migraciones, en este caso el proyecto y base de datos se subieron completo para las pruebas respectivas
+# De ser necesario aplicar migraciones, en este caso el proyecto y base de datos se subieron en su totalidad para las pruebas respectivas
 python manage.py makemigrations
 python manage.py migrate
 
