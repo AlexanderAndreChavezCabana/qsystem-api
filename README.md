@@ -155,3 +155,14 @@ urlpatterns = [
 
 #### Captura views.py
 ![](imagenes_doc/views.png)
+
+
+### Ver Swagger UI:
+Abre tu navegador web y ve a la siguiente dirección: http://127.0.0.1:8000/api/schema/swagger/#/
+
+Esto debería abrir el Swagger UI, donde podrás ver la documentación interactiva de tu API y probar los endpoints directamente desde la interfaz de usuario.
+
+#### Captura de Pantalla de Swagger UI
+- Swagger UI mostrando la documentación de la API:
+![](imagenes_doc/swagger.png)
+
