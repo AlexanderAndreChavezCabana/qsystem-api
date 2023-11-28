@@ -202,6 +202,7 @@ Para comenzar las pruebas con la API REST de Personas, necesitarás importar el 
 1. Inicia SOAP UI.
 2. Dirígete a la opción `File > Import Project`.
 3. Navega hasta la ubicación del archivo `REST-QSystem-Personas-soapui-project.xml`, que se encuentra dentro de la carpeta `SOAP file`.
+   ![Importación en SOAP UI](imagenes_doc/archivo_soap.png)
 4. Selecciona el archivo y permite que SOAP UI complete el proceso de importación.
 
 ### Ejecutar Consultas con SOAP UI
@@ -216,16 +217,14 @@ Una vez importado el proyecto, sigue estos pasos para ejecutar las consultas:
    ![Importación en SOAP UI](imagenes_doc/lista_peticiones.png)
 
 
-
-
 ### Configuración de Autenticación en SOAP UI
 
 Para ejecutar consultas autenticadas contra la API, debes incluir un token de acceso válido en la solicitud. Aquí se muestra cómo configurar el token de acceso en SOAP UI para el endpoint `ListaPorFechaCreacion`.
 
 #### Obtención del Token de Acceso
 
-1. Si aún no tienes un token, puedes obtener uno utilizando la función 'Get Token' de SOAP UI.
-2. Si ya tienes un token de la sesión anterior, puedes reutilizarlo siempre y cuando no haya expirado.
+i. Si aún no tienes un token, puedes obtener uno utilizando la función 'Get Token' de SOAP UI.
+ii. Si ya tienes un token de la sesión anterior, puedes reutilizarlo siempre y cuando no haya expirado.
 
 #### Configuración de la Solicitud
 
@@ -244,3 +243,28 @@ Para ejecutar consultas autenticadas contra la API, debes incluir un token de ac
 #### Documentación Visual
    ### Captura de Pantalla - Importación en SOAP UI:
    ![Importación en SOAP UI](imagenes_doc/autenticacion_soap.png)
+
+### Consultas
+#### 3.1. Listar Personas por fecha de creación
+![ListarPersonasporFechaCreacion](imagenes_doc/istarPersonasporFechaCreacion.png)
+
+#### 3.2. Ordenar por DNI, Apellido Paterno y Materno
+![OrdenarDniAPaternoMaterno](imagenes_doc/OrdenarDniAPaternoMaterno.png)
+
+#### 3.3. Consultar persona por DNI
+![ConsultarPersonaPorDNI](imagenes_doc/ConsultarPersonaPorDNI.png)
+
+#### 3.4. Registrar persona
+![Registrar](imagenes_doc/RegistrarPersona.png)
+
+#### 3.5. Actualizar datos de Persona
+![PersonaActualizar](imagenes_doc/PersonaActualizar.png)
+
+#### 3.6. Consultar persona por ID
+![PersonaConsultarID](imagenes_doc/PersonaConsultarID.png)
+
+#### 3.7. Consultar persona por DNI
+![EliminarDatosPersona](imagenes_doc/EliminarDatosPersona.png)
+
+#### 3.8. Actualizar solo registro con Patch para datos persona
+![PatchDNI](imagenes_doc/PatchDNI.png)
