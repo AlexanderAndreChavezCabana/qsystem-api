@@ -122,7 +122,7 @@ Para obtener la lista desordenada y ordenada de personas usar las siguientes con
 # Obtener la Lista Desordenada
 SELECT * FROM api_persona;
 ```
-![](imagenes_doc/lista_desordenada.png)
+![](imagenes_doc/lista_ordenada.png)
 
 ```
 # Obtener la Lista Ordenada DNI, Apellido Paterno y Apellido Materno
@@ -263,7 +263,7 @@ Para comenzar las pruebas con la API REST de Personas, necesitarás importar el 
 1. Inicia SOAP UI.
 2. Dirígete a la opción `File > Import Project`.
 3. Navega hasta la ubicación del archivo `REST-QSystem-Personas-soapui-project.xml`, que se encuentra dentro de la carpeta `SOAP file`.
-   ![Importación en SOAP UI](imagenes_doc/archivo_soap.png)
+![Importación en SOAP UI](imagenes_doc/archivo_soap.png)
 4. Selecciona el archivo y permite que SOAP UI complete el proceso de importación.
 
 #### Ejecutar Consultas con SOAP UI
