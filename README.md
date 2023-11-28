@@ -1,6 +1,6 @@
-# Q - System - Prueba Técnica
+# **Q - System - Prueba Técnica**
 
-## 1. Requisitos del Sistema
+## **1. Requisitos del Sistema**
 
 Para ejecutar este proyecto, tu sistema debe cumplir con los siguientes requisitos:
 
@@ -13,50 +13,50 @@ Las dependencias específicas del proyecto, como Django, djangorestframework y o
 
  a continuación se describe brevemente para qué sirve cada uno de los paquetes que has listado:
 
-- asgiref: Proporciona las bases para correr código asíncrono en sincronización con código sincrónico, fundamental para las capacidades asíncronas de Django.
+- **asgiref:** Proporciona las bases para correr código asíncrono en sincronización con código sincrónico, fundamental para las capacidades asíncronas de Django.
 
-- attrs: Es una biblioteca que facilita la creación de clases y gestión de sus atributos sin la verbosidad típica de Python puro.
+- **attrs:** Es una biblioteca que facilita la creación de clases y gestión de sus atributos sin la verbosidad típica de Python puro.
 
-- Django: Un framework de desarrollo web de alto nivel en Python que fomenta el desarrollo rápido y un diseño limpio y pragmático.
+- **Django:** Un framework de desarrollo web de alto nivel en Python que fomenta el desarrollo rápido y un diseño limpio y pragmático.
 
-- djangorestframework (DRF): Un kit de herramientas poderoso y flexible para construir APIs web en Django.
+- **djangorestframework (DRF):** Un kit de herramientas poderoso y flexible para construir APIs web en Django.
 
-- djangorestframework-simplejwt: Proporciona una autenticación JWT (JSON Web Token) para Django REST Framework.
+- **djangorestframework-simplejwt:** Proporciona una autenticación JWT (JSON Web Token) para Django REST Framework.
 
-- drf-extensions: Un conjunto de extensiones para Django REST Framework que añaden funcionalidades adicionales.
+- **drf-extensions:** Un conjunto de extensiones para Django REST Framework que añaden funcionalidades adicionales.
 
-- drf-spectacular: Un generador de esquemas para Django REST Framework que crea documentación de API con OpenAPI.
+- **drf-spectacular:** Un generador de esquemas para Django REST Framework que crea documentación de API con OpenAPI.
 
-- drf-yasg: Genera documentación en tiempo real para APIs de Django REST Framework utilizando estándares OpenAPI.
+- **drf-yasg:** Genera documentación en tiempo real para APIs de Django REST Framework utilizando estándares OpenAPI.
 
-- inflection: Una pequeña biblioteca para realizar transformaciones de palabras (singularizar, pluralizar).
+- **inflection:** Una pequeña biblioteca para realizar transformaciones de palabras (singularizar, pluralizar).
 
-- jsonschema: Una implementación de JSON Schema para Python que permite validar JSONs contra esquemas predefinidos.
+- **jsonschema:** Una implementación de JSON Schema para Python que permite validar JSONs contra esquemas predefinidos.
 
-- jsonschema-specifications: Este paquete no es estándar y puede ser específico de un proyecto o contexto; su propósito sería proporcionar especificaciones para validar JSONs basados en esquemas.
+- **jsonschema-specifications:** Este paquete no es estándar y puede ser específico de un proyecto o contexto; su propósito sería proporcionar especificaciones para validar JSONs basados en esquemas.
 
-- packaging: Proporciona soporte para trabajar con especificaciones de paquetes Python.
+- **packaging:** Proporciona soporte para trabajar con especificaciones de paquetes Python.
 
-- PyJWT: Una biblioteca Python para trabajar con JSON Web Tokens, utilizada para codificar y decodificar JWTs.
+- **PyJWT:** Una biblioteca Python para trabajar con JSON Web Tokens, utilizada para codificar y decodificar JWTs.
 
-- pytz: Proporciona definiciones de zonas horarias para el manejo de fechas y horas en Python.
+- **pytz:** Proporciona definiciones de zonas horarias para el manejo de fechas y horas en Python.
 
-- PyYAML: Una biblioteca YAML para Python que permite la serialización y deserialización de datos en formato YAML.
+- **PyYAML:** Una biblioteca YAML para Python que permite la serialización y deserialización de datos en formato YAML.
 
-- referencing: Este paquete no es estándar y puede ser específico de un proyecto o contexto; su propósito podría estar relacionado con la creación de referencias o citas.
+- **referencing:** Este paquete no es estándar y puede ser específico de un proyecto o contexto; su propósito podría estar relacionado con la creación de referencias o citas.
 
-- rpds-py: Este paquete no es estándar y puede ser específico de un proyecto o contexto; podría estar relacionado con estructuras de datos o procesamiento de datos.
+- **rpds-py:** Este paquete no es estándar y puede ser específico de un proyecto o contexto; podría estar relacionado con estructuras de datos o procesamiento de datos.
 
-- sqlparse: Un analizador de SQL no validador que proporciona soporte para formatear y descomponer consultas SQL.
+- **sqlparse:** Un analizador de SQL no validador que proporciona soporte para formatear y descomponer consultas SQL.
 
-- typing_extensions: Proporciona versiones de atrás compatibles de características de tipado añadidas en nuevas versiones de Python.
+- **typing_extensions:** Proporciona versiones de atrás compatibles de características de tipado añadidas en nuevas versiones de Python.
 
-- uritemplate: Una biblioteca para trabajar con plantillas URI, tal como se define en RFC 6570.
+- **uritemplate:** Una biblioteca para trabajar con plantillas URI, tal como se define en RFC 6570.
 
-- zipp: Proporciona una implementación de retrocompatibilidad para el módulo zipfile de Python.
+- **zipp:** Proporciona una implementación de retrocompatibilidad para el módulo zipfile de Python.
 
 
-## 2. Instalación y Configuración Inicial del Proyecto
+## **2. Instalación y Configuración Inicial del Proyecto**
 ### Clonar el Repositorio
 
 ```
@@ -84,7 +84,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-# 3. Ejercicios
+# **3. Ejercicios**
 ## Ejercicio # 1
 
 - Crear una lista del Objeto Persona (dni, appPaterno, appMatterno) y deberás ordenar la lista por DNI y de ahí por apellido paterno, pintando la lista desordenada y de ahí ordenada. La información debe ser obtenida por una pequeña base de datos con estos tres datos. Incluya las sentencias en SQL para poder obtener los datos y la integración para obtener la consulta.
