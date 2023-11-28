@@ -330,3 +330,10 @@ Llegado a este punto, dado que se realizó la creación de API basados en autent
 ##### 3.8. Actualizar solo registro con Patch para datos persona
 ![PatchDNI](imagenes_doc/PatchDNI.png)
 
+# 4. **Conclusión**
+Conclusión
+El proyecto "Q - System" es desarrollo de la siguiente forma:
+
+Primero, se utilizó Django como framework principal, aprovechando su robustez y flexibilidad para el desarrollo web. Esto, combinado con Django REST Framework (DRF), facilitó la creación de una API REST intuitiva y escalable. DRF no solo mejoró la experiencia de desarrollo, sino que también proporcionó una base sólida para la gestión de datos y la autenticación, destacándose el uso de JWT (JSON Web Tokens) para la seguridad de la API, en conexión a la base de datos SQLite.
+
+La integración de Swagger UI y SOAP UI jugó un papel crucial en la documentación y prueba de la API. Swagger UI ofreció una interfaz interactiva para explorar la API, mientras que SOAP UI permitió realizar pruebas para asegurar la funcionalidad y fiabilidad del sistema.
