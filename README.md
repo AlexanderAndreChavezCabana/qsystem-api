@@ -187,22 +187,18 @@ Esto debería abrir el Swagger UI, donde podrás ver la documentación interacti
    ![Solicitud con Token](imagenes_doc/obtener_lista_personas.png)
 
 
-### Ejercicio #3
+## Ejercicio #3
 
 - Es necesario implementar la función de consulta a través de una aplicación tercera para poder asegurar que toda la prueba está corriendo adecuadamente. 
 - Para poder probarlo, es importante que pueda existir al menos una llamada usando herramientas terceras como el SOAP UI
 
-# Ejercicios Resueltos
+### Resolución ejercicio #3: Implementación de Consultas con SOAP UI
 
-
-
-## Ejercicio #3: Implementación de Consulta con SOAP UI
-
-### Importar el Proyecto en SOAP UI
+#### Importar el Proyecto en SOAP UI
 
 Para comenzar las pruebas con la API REST de Personas, necesitarás importar el proyecto en SOAP UI utilizando el archivo de configuración provisto.
 
-#### Pasos para la Importación
+##### Pasos para la Importación
 
 1. Inicia SOAP UI.
 2. Dirígete a la opción `File > Import Project`.
@@ -210,7 +206,7 @@ Para comenzar las pruebas con la API REST de Personas, necesitarás importar el 
    ![Importación en SOAP UI](imagenes_doc/archivo_soap.png)
 4. Selecciona el archivo y permite que SOAP UI complete el proceso de importación.
 
-### Ejecutar Consultas con SOAP UI
+#### Ejecutar Consultas con SOAP UI
 
 Una vez importado el proyecto, sigue estos pasos para ejecutar las consultas:
 
@@ -218,58 +214,58 @@ Una vez importado el proyecto, sigue estos pasos para ejecutar las consultas:
 2. Dentro del proyecto, verás una lista de consultas preconfiguradas listas para ser ejecutadas.
 3. Selecciona la consulta que deseas probar, como `PersonasLista`, `ListaPorFechaCreacion`, o `OrdenarDniPaternoMaterno`.
 
-   ### Captura de Pantalla - Importación en SOAP UI:
+   #### Captura de Pantalla - Importación en SOAP UI:
    ![Importación en SOAP UI](imagenes_doc/lista_peticiones.png)
 
 
-### Configuración de Autenticación en SOAP UI
+#### Configuración de Autenticación en SOAP UI
 
 Para ejecutar consultas autenticadas contra la API, debes incluir un token de acceso válido en la solicitud. Aquí se muestra cómo configurar el token de acceso en SOAP UI para el endpoint `ListaPorFechaCreacion`.
 
-#### Obtención del Token de Acceso
+##### Obtención del Token de Acceso
 
 i. Si aún no tienes un token, puedes obtener uno utilizando la función 'Get Token' de SOAP UI.
 ii. Si ya tienes un token de la sesión anterior, puedes reutilizarlo siempre y cuando no haya expirado.
 
-#### Configuración de la Solicitud
+##### Configuración de la Solicitud
 
 1. Selecciona la solicitud `ListaPorFechaCreacion` dentro del proyecto `REST QSystem Personas`.
 2. Ve a la pestaña `Auth (Authorization)` que se encuentra en la parte inferior de la solicitud.
 3. En el campo `Access Token`, ingresa el token obtenido previamente. Un ejemplo de token sería `eyhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2Itb2I9ex`. En este punto tendrás que colocar el obtenido por ti.
 4. Asegúrate de que el método seleccionado es `GET` y que la URL del endpoint es correcta (`http://127.0.0.1:8000/api/personas/`).
 
-#### Ejecución de la Solicitud
+##### Ejecución de la Solicitud
 
 1. Haz clic en el botón 'Send' para ejecutar la solicitud.
 2. Observa la respuesta en el panel de respuesta para asegurarte de que se haya autenticado y ejecutado correctamente.
 3. Haz clic en el botón de ejecución (usualmente un triángulo verde) para enviar la solicitud al servidor.
 4. Revisa las respuestas en la parte inferior de la ventana para validar los resultados.
 
-#### Documentación Visual
-   ### Captura de Pantalla - Importación en SOAP UI:
+##### Documentación Visual
+   #### Captura de Pantalla - Importación en SOAP UI:
    ![Importación en SOAP UI](imagenes_doc/autenticacion_soap.png)
 
-### Consultas
-#### 3.1. Listar Personas por fecha de creación
+#### Consultas
+##### 3.1. Listar Personas por fecha de creación
 ![ListarPersonasporFechaCreacion](imagenes_doc/istarPersonasporFechaCreacion.png)
 
-#### 3.2. Ordenar por DNI, Apellido Paterno y Materno
+##### 3.2. Ordenar por DNI, Apellido Paterno y Materno
 ![OrdenarDniAPaternoMaterno](imagenes_doc/OrdenarDniAPaternoMaterno.png)
 
-#### 3.3. Consultar persona por DNI
+##### 3.3. Consultar persona por DNI
 ![ConsultarPersonaPorDNI](imagenes_doc/ConsultarPersonaPorDNI.png)
 
-#### 3.4. Registrar persona
+##### 3.4. Registrar persona
 ![Registrar](imagenes_doc/RegistrarPersona.png)
 
-#### 3.5. Actualizar datos de Persona
+##### 3.5. Actualizar datos de Persona
 ![PersonaActualizar](imagenes_doc/PersonaActualizar.png)
 
-#### 3.6. Consultar persona por ID
+##### 3.6. Consultar persona por ID
 ![PersonaConsultarID](imagenes_doc/PersonaConsultarID.png)
 
-#### 3.7. Consultar persona por DNI
+##### 3.7. Consultar persona por DNI
 ![EliminarDatosPersona](imagenes_doc/EliminarDatosPersona.png)
 
-#### 3.8. Actualizar solo registro con Patch para datos persona
+##### 3.8. Actualizar solo registro con Patch para datos persona
 ![PatchDNI](imagenes_doc/PatchDNI.png)
