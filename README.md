@@ -128,8 +128,8 @@ SELECT * FROM api_persona;
 # Obtener la Lista Ordenada DNI, Apellido Paterno y Apellido Materno
 SELECT * FROM api_persona ORDER BY dni, appPaterno, appMaterno;
 ```
-![](imagenes_doc/lista_ordenada.png)
 
+![](imagenes_doc/lista_desordenada.png)
 ## Ejercicio # 2 
 
 - Se requiere la construcción de un REST API, que transmita la lista del Objeto Persona.  
