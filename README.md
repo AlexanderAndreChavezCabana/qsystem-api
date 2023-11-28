@@ -324,7 +324,7 @@ Llegado a este punto, dado que se realizó la creación de API basados en autent
 ##### 3.6. Consultar persona por ID
 ![PersonaConsultarID](imagenes_doc/PersonaConsultarID.png)
 
-##### 3.7. Consultar persona por DNI
+##### 3.7. Elminar persona por ID
 ![EliminarDatosPersona](imagenes_doc/EliminarDatosPersona.png)
 
 ##### 3.8. Actualizar solo registro con Patch para datos persona
