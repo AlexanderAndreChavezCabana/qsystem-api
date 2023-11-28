@@ -164,5 +164,11 @@ Esto debería abrir el Swagger UI, donde podrás ver la documentación interacti
 
 #### Captura de Pantalla de Swagger UI
 - Swagger UI mostrando la documentación de la API:
+
+![](imagenes_doc/swagger.png)
+
+#### Captura de Pantalla de Swagger UI
+- Swagger UI mostrando la documentación de la API:
+
 ![](imagenes_doc/swagger.png)
 
