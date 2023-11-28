@@ -1,0 +1,17 @@
+# .gitignore
+
+# Entorno virtual
+venv/
+
+# Archivos generados por Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de entorno
+.env
+
+# Archivos de configuración de sistema
+.DS_Store
+Thumbs.db
