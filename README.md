@@ -67,7 +67,6 @@ class Persona(models.Model):
 #### Captura models.py
 ![](imagenes_doc/models.png)
 
-```
 
 #### Consultas SQL para listas
 ```
