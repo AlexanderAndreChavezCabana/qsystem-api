@@ -30,10 +30,6 @@ source venv/bin/activate
 ```
 pip install -r requirements.txt
 ```
-<<<<<<< HEAD
-=======
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
->>>>>>> origin/main
 
 ## Ingresar a la carpeta del proyecto, aplicar  migraciones y correr el sistema
 ```
@@ -54,12 +50,7 @@ python manage.py runserver
 #models.py
 from django.db import models
 
-<<<<<<< HEAD
 # Models Persona
-=======
-# Create your models here.
-
->>>>>>> origin/main
 class Persona(models.Model):
     dni = models.CharField(max_length=10)
     appPaterno = models.CharField(max_length=255)
@@ -72,25 +63,18 @@ class Persona(models.Model):
     
     class Meta:
         ordering = ['-created_at']
-<<<<<<< HEAD
 ```
-#### Captura views.py
+#### Captura models.py
 ![](imagenes_doc/models.png)
-=======
 
 ```
->>>>>>> origin/main
 
 #### Consultas SQL para listas
 ```
 # Obtener la Lista Desordenada
-<<<<<<< HEAD
 SELECT * FROM api.persona;
-=======
-SELECT * FROM tu_app_persona;
->>>>>>> origin/main
 
-# Obtener la Lista Ordenada por DNI y Apellido Paterno
+# Obtener la Lista Ordenada por DNI, Apellido Paterno y Apellido Materno
 SELECT * FROM api.persona ORDER BY dni, appPaterno, appMaterno;
 ```
 
@@ -101,20 +85,15 @@ SELECT * FROM api.persona ORDER BY dni, appPaterno, appMaterno;
 from rest_framework import serializers
 from .models import Persona
 
-<<<<<<< HEAD
 # Serializer Persona
-=======
->>>>>>> origin/main
 class PersonaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Persona
         fields = '__all__'
 ```
-<<<<<<< HEAD
-#### Captura views.py
+
+#### Captura serializers.py
 ![](imagenes_doc/serializers.png)
-=======
->>>>>>> origin/main
 
 ### *urls.py*
 ```
@@ -124,16 +103,14 @@ from rest_framework import routers
 from rest_framework_extensions.routers import ExtendedSimpleRouter
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView, TokenVerifyView
 
+# View Set Persona
 from api.views import PersonaViewSet
 
-# En lugar de usar DefaultRouter, utiliza ExtendedSimpleRouter
 router = ExtendedSimpleRouter()
 
-# Registra la vista PersonaViewSet con el router
 router.register(r'personas', PersonaViewSet, basename='persona')
 
 urlpatterns = [
-    # Rutas generadas por el router extendido
     path('', include(router.urls)),
 
     # Rutas adicionales
@@ -144,11 +121,9 @@ urlpatterns = [
     path('token/verify/', TokenVerifyView.as_view(), name='token_verify'),
 ]
 ```
-<<<<<<< HEAD
-#### Captura views.py
+
+#### Captura urls.py
 ![](imagenes_doc/urls.png)
-=======
->>>>>>> origin/main
 
 ### *views.py*
 ```
@@ -178,8 +153,6 @@ urlpatterns = [
     path('token/verify/', TokenVerifyView.as_view(), name='token_verify'),
 ]
 ```
-<<<<<<< HEAD
+
 #### Captura views.py
 ![](imagenes_doc/views.png)
-=======
->>>>>>> origin/main
