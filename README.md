@@ -1,6 +1,6 @@
-# Q - System ![](imagenes_doc/qsystemsac_logo.jpeg)
+# Q - System - Prueba Técnica
 
-## Instalación y Configuración Inicial
+## Instalación y Configuración Inicial del Proyecto
 ### Clonar el Repositorio
 
 ```
