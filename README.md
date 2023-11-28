@@ -190,3 +190,56 @@ Esto debería abrir el Swagger UI, donde podrás ver la documentación interacti
 
    #### Captura de pantalla: Solicitud con Token
    ![Solicitud con Token](imagenes_doc/obtener_lista_personas.png)
+
+## Ejercicio #3: Implementación de Consulta con SOAP UI
+
+### Importar el Proyecto en SOAP UI
+
+Para comenzar las pruebas con la API REST de Personas, necesitarás importar el proyecto en SOAP UI utilizando el archivo de configuración provisto.
+
+#### Pasos para la Importación
+
+1. Inicia SOAP UI.
+2. Dirígete a la opción `File > Import Project`.
+3. Navega hasta la ubicación del archivo `REST-QSystem-Personas-soapui-project.xml`, que se encuentra dentro de la carpeta `SOAP file`.
+4. Selecciona el archivo y permite que SOAP UI complete el proceso de importación.
+
+### Ejecutar Consultas con SOAP UI
+
+Una vez importado el proyecto, sigue estos pasos para ejecutar las consultas:
+
+1. Expande el proyecto `REST QSystem Personas` en la barra lateral de SOAP UI.
+2. Dentro del proyecto, verás una lista de consultas preconfiguradas listas para ser ejecutadas.
+3. Selecciona la consulta que deseas probar, como `PersonasLista`, `ListaPorFechaCreacion`, o `OrdenarDniPaternoMaterno`.
+
+   ### Captura de Pantalla - Importación en SOAP UI:
+   ![Importación en SOAP UI](imagenes_doc/lista_peticiones.png)
+
+4. Haz clic en el botón de ejecución (usualmente un triángulo verde) para enviar la solicitud al servidor.
+5. Revisa las respuestas en la parte inferior de la ventana para validar los resultados.
+
+
+### Configuración de Autenticación en SOAP UI
+
+Para ejecutar consultas autenticadas contra la API, debes incluir un token de acceso válido en la solicitud. Aquí se muestra cómo configurar el token de acceso en SOAP UI para el endpoint `ListaPorFechaCreacion`.
+
+#### Obtención del Token de Acceso
+
+1. Si aún no tienes un token, puedes obtener uno utilizando la función 'Get Token' de SOAP UI.
+2. Si ya tienes un token de la sesión anterior, puedes reutilizarlo siempre y cuando no haya expirado.
+
+#### Configuración de la Solicitud
+
+1. Selecciona la solicitud `ListaPorFechaCreacion` dentro del proyecto `REST QSystem Personas`.
+2. Ve a la pestaña `Auth (Authorization)` que se encuentra en la parte inferior de la solicitud.
+3. En el campo `Access Token`, ingresa el token obtenido previamente. Un ejemplo de token sería `eyhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2Itb2I9ex`. En este punto tendrás que colocar el obtenido por ti.
+4. Asegúrate de que el método seleccionado es `GET` y que la URL del endpoint es correcta (`http://127.0.0.1:8000/api/personas/`).
+
+#### Ejecución de la Solicitud
+
+1. Haz clic en el botón 'Send' para ejecutar la solicitud.
+2. Observa la respuesta en el panel de respuesta para asegurarte de que se haya autenticado y ejecutado correctamente.
+
+#### Documentación Visual
+   ### Captura de Pantalla - Importación en SOAP UI:
+   ![Importación en SOAP UI](imagenes_doc/autenticacion_soap.png)
