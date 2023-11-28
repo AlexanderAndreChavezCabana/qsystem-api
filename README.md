@@ -1,5 +1,33 @@
-# Q - System
-## Planteamiento del problema
+# Q - System ![](imagenes_doc/modelsqsystemsac_logo.jpeg)
+## Instalación y Configuración Inicial
+### Clonar el Repositorio
+
+```
+git clone https://github.com/AlexanderAndreChavezCabana/qsystem-api.git
+cd tu-repositorio
+```
+### Crear y Activar el Entorno Virtual
+```
+python3.10 -m venv venv
+source venv/bin/activate
+```
+### Instalar Dependencias del Proyecto
+```
+pip install -r requirements.txt
+```
+
+### Ingresar a la carpeta del proyecto, aplicar  migraciones y correr el sistema
+```
+cd app
+# De ser necesario aplicar migraciones, en este caso el proyecto y base de datos se subieron completo para las pruebas respectivas
+python manage.py makemigrations
+python manage.py migrate
+
+# Correr el sistema
+python manage.py runserver
+```
+
+## Prueba técnica
 ### Ejercicio # 1
 
 - Crear una lista del Objeto Persona (dni, appPaterno, appMatterno) y deberás ordenar la lista por DNI y de ahí por apellido paterno, pintando la lista desordenada y de ahí ordenada. La información debe ser obtenida por una pequeña base de datos con estos tres datos. Incluya las sentencias en SQL para poder obtener los datos y la integración para obtener la consulta.
@@ -12,35 +40,6 @@
 
 - Es necesario implementar la función de consulta a través de una aplicación tercera para poder asegurar que toda la prueba está corriendo adecuadamente. 
 - Para poder probarlo, es importante que pueda existir al menos una llamada usando herramientas terceras como el SOAP UI
-
-
-# Instalación y Configuración Inicial
-## Clonar el Repositorio
-
-```
-git clone https://github.com/AlexanderAndreChavezCabana/qsystem-api.git
-cd tu-repositorio
-```
-## Crear y Activar el Entorno Virtual
-```
-python3.10 -m venv venv
-source venv/bin/activate
-```
-## Instalar Dependencias del Proyecto
-```
-pip install -r requirements.txt
-```
-
-## Ingresar a la carpeta del proyecto, aplicar  migraciones y correr el sistema
-```
-cd app
-# De ser necesario aplicar migraciones, en este caso el proyecto y base de datos se subieron completo para las pruebas respectivas
-python manage.py makemigrations
-python manage.py migrate
-
-# Correr el sistema
-python manage.py runserver
-```
 
 # Ejercicios Resueltos
 ## Ejercicio #1: Crear y Ordenar Lista de Personas
