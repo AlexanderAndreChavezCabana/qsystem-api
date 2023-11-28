@@ -1,4 +1,5 @@
-# **Q - System - Prueba Técnica**
+# **Q - System - Prueba Técnica**: Alexander Andre Chavez Cabana
+
 
 ## **1. Requisitos del Sistema**
 
@@ -115,13 +116,19 @@ class Persona(models.Model):
 
 
 #### Consultas SQL para listas
+Para obtener la lista desordenada y ordenada de personas usar las siguientes consultas SQL:
+
 ```
 # Obtener la Lista Desordenada
-SELECT * FROM api.persona;
-
-# Obtener la Lista Ordenada por DNI, Apellido Paterno y Apellido Materno
-SELECT * FROM api.persona ORDER BY dni, appPaterno, appMaterno;
+SELECT * FROM api_persona;
 ```
+![](imagenes_doc/lista_desordenada.png)
+
+``````
+# Obtener la Lista Ordenada DNI, Apellido Paterno y Apellido Materno
+SELECT * FROM api_persona ORDER BY dni, appPaterno, appMaterno;
+```
+![](imagenes_doc/lista_ordenada.png)
 
 ## Ejercicio # 2 
 
@@ -183,7 +190,6 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 from api.views import PersonaViewSet
 
-# En lugar de usar DefaultRouter, utiliza ExtendedSimpleRouter
 router = ExtendedSimpleRouter()
 
 # Registra la vista PersonaViewSet con el router
@@ -209,10 +215,10 @@ urlpatterns = [
 #### Ver Swagger UI:
 Abre tu navegador web y ve a la siguiente dirección: http://127.0.0.1:8000/api/schema/swagger/#/
 
-Esto debería abrir el Swagger UI, donde podrás ver la documentación interactiva de tu API y probar los endpoints directamente desde la interfaz de usuario.
+Esto debería abrir el Swagger UI, donde se podrá ver la documentación interactiva de la API y probar los endpoints directamente desde la interfaz de usuario.
 
 ##### Captura de Pantalla de Swagger UI
-- Swagger UI mostrando la documentación de la API:
+- Se visualizará la documentación de la API Swagger UI :
 
 ![](imagenes_doc/swagger.png)
 
@@ -222,16 +228,16 @@ Esto debería abrir el Swagger UI, donde podrás ver la documentación interacti
 ![Token](imagenes_doc/token.png)
 2. Llena los parámetros requeridos, en este caso con las credenciales *{ "username": "chavez", "password": "chavez" }* y ejecuta:
 ![Token Obtain](imagenes_doc/token1.png)
-
+3. El token a su disposición tiene una duración de 6 días.
 
    ##### Captura de pantalla: Token Obtenido
    ![Token execute](imagenes_doc/token_obtenido.png)
 
-#### Realizar una Solicitud con Token:
+#### Realizar una Solicitud con Token en Swagger UI:
 
 1. Utiliza el token obtenido para realizar solicitudes a recursos protegidos.
     ##### Utilizar token en Swagger
-    1. Dirigete hasta la parte superior y presiona en authorize e inserta el token mostrada en la imagen anterior (en tu caso se mostrará otro token, inserta el obtenido).
+    1. Dirigete hasta la parte superior y presiona en 'authorize' e inserta el token mostrada en la imagen anterior (en este caso se mostrará otro token, usted deberá inserta el obtenido o de ser necesario generarlo nuevamente).
     ![Token](imagenes_doc/insertar_token.png)
 
 
@@ -266,7 +272,7 @@ Una vez importado el proyecto, sigue estos pasos para ejecutar las consultas:
 
 1. Expande el proyecto `REST QSystem Personas` en la barra lateral de SOAP UI.
 2. Dentro del proyecto, verás una lista de consultas preconfiguradas listas para ser ejecutadas.
-3. Selecciona la consulta que deseas probar, como `PersonasLista`, `ListaPorFechaCreacion`, o `OrdenarDniPaternoMaterno`.
+3. Selecciona la consulta que deseas probar, como `PersonasLista`, `ListaPorFechaCreacion`, `OrdenarDniPaternoMaterno`, entre otras consultas más.
 
    #### Captura de Pantalla - Importación en SOAP UI:
    ![Importación en SOAP UI](imagenes_doc/lista_peticiones.png)
@@ -274,12 +280,12 @@ Una vez importado el proyecto, sigue estos pasos para ejecutar las consultas:
 
 #### Configuración de Autenticación en SOAP UI
 
-Para ejecutar consultas autenticadas contra la API, debes incluir un token de acceso válido en la solicitud. Aquí se muestra cómo configurar el token de acceso en SOAP UI para el endpoint `ListaPorFechaCreacion`.
+Llegado a este punto, dado que se realizó la creación de API basados en autenticación JWT, usted para ejecutar consultas autenticadas contra la API, deberá incluir un token de acceso válido en la solicitud. Aquí se muestra cómo configurar el token de acceso en SOAP UI para el endpoint `ListaPorFechaCreacion`.
 
 ##### Obtención del Token de Acceso
 
-i. Si aún no tienes un token, puedes obtener uno utilizando la función 'Get Token' de SOAP UI.
-ii. Si ya tienes un token de la sesión anterior, puedes reutilizarlo siempre y cuando no haya expirado.
+1. Si aún no tienes un token, puedes obtener uno utilizando la función 'Get Token' de SOAP UI.
+2. Si ya tienes un token de la sesión anterior, puedes reutilizarlo siempre y cuando no haya expirado.
 
 ##### Configuración de la Solicitud
 
@@ -323,3 +329,4 @@ ii. Si ya tienes un token de la sesión anterior, puedes reutilizarlo siempre y 
 
 ##### 3.8. Actualizar solo registro con Patch para datos persona
 ![PatchDNI](imagenes_doc/PatchDNI.png)
+
