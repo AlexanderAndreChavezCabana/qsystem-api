@@ -35,8 +35,9 @@ class PersonaViewSet(viewsets.ModelViewSet):
         if app_materno:
             initial_queryset = initial_queryset.filter(appMaterno=app_materno)
 
-        # Si se ordenó por created_at, entonces ordénalo por created_at primero y luego por los campos adicionales
         if 'created_at' in fields:
             initial_queryset = initial_queryset.order_by(F('created_at').desc(), *fields)
 
         return initial_queryset
+    
+    

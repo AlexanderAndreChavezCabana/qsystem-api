@@ -1,7 +1,6 @@
 from django.db import models
 
-# Create your models here.
-
+# Models Persona
 class Persona(models.Model):
     dni = models.CharField(max_length=10)
     appPaterno = models.CharField(max_length=255)

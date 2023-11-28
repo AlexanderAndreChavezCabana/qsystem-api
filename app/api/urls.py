@@ -4,16 +4,14 @@ from rest_framework import routers
 from rest_framework_extensions.routers import ExtendedSimpleRouter
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView, TokenVerifyView
 
+# View Set Persona
 from api.views import PersonaViewSet
 
-# En lugar de usar DefaultRouter, utiliza ExtendedSimpleRouter
 router = ExtendedSimpleRouter()
 
-# Registra la vista PersonaViewSet con el router
 router.register(r'personas', PersonaViewSet, basename='persona')
 
 urlpatterns = [
-    # Rutas generadas por el router extendido
     path('', include(router.urls)),
 
     # Rutas adicionales
