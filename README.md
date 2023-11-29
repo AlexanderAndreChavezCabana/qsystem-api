@@ -307,7 +307,7 @@ Llegado a este punto, dado que se realizó la creación de API basados en autent
 
 #### Consultas
 ##### 3.1. Listar Personas por fecha de creación
-![ListarPersonasporFechaCreacion](imagenes_doc/istarPersonasporFechaCreacion.png)
+![ListarPersonasporFechaCreacion](imagenes_doc/ListarPersonasporFechaCreacion.png)
 
 ##### 3.2. Ordenar por DNI, Apellido Paterno y Materno
 ![OrdenarDniAPaternoMaterno](imagenes_doc/OrdenarDniAPaternoMaterno.png)
